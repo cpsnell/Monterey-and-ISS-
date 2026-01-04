@@ -19,16 +19,9 @@ print(response.json()["iss_position"])
 
 longitude = response.json()["iss_position"]["longitude"]
 latitude = response.json()["iss_position"]["latitude"]
-#print(longitude)
-#print(latitude)
+
 point2 = (float(latitude), float(longitude))
 
 print(f"Haversine distance between Monterey and the ISS: {haversine(point1, point2,unit='km'):.2f} km")
-#print(f"Geodesic distance between Monterey and the ISS: {geodesic(point1, point2).km:.2f} km")
 
-
-#api.kanye.rest
-#sunrise-sunset.org
-
-#https://api.sunrise-sunset.org/json
 
